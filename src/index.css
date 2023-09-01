@@ -1,0 +1,59 @@
+.alert {
+  max-width: 300px;
+  position: absolute;
+  bottom: 100px;
+  right: 80px;
+  padding: 50px;
+}
+
+.card {
+  background: rgb(83, 28, 28);
+  background: linear-gradient(
+    130deg,
+    rgba(83, 28, 28, 1) 29%,
+    rgba(9, 56, 121, 1) 50%,
+    rgba(241, 9, 9, 1) 100%
+  );
+  animation: gradientBG 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  1000% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background: rgb(83, 28, 28);
+  background: linear-gradient(
+    318deg,
+    rgba(83, 28, 28, 1) 29%,
+    rgba(9, 56, 121, 1) 50%,
+    rgba(241, 9, 9, 1) 100%
+  );
+  animation: gradientBG 30s ease infinite;
+  background-size: 400% 400%;
+
+  @keyframes gradientBG {
+    1000% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    0% {
+      background-position: 0% 50%;
+    }
+  }
+}
